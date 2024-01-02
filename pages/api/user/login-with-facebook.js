@@ -28,13 +28,12 @@ export default async (req, res) => {
             res.status(200).json({
               message: "login successfull",
               token: token,
-              
             });
           } else {
-            hash(`${email}Deal2Coupon`, 10, (err, hash) => {
+            hash(`${email}The Saver Street`, 10, (err, hash) => {
               if (hash) {
                 const user = new User({
-                  userName: first_name+" "+last_name,
+                  userName: first_name + " " + last_name,
                   email: email,
                   password: hash,
                   isVerified: true,
@@ -50,7 +49,6 @@ export default async (req, res) => {
                     res.status(200).json({
                       message: "Sign up successfull",
                       token: token,
-                      
                     });
                   })
                   .catch((error) => {
@@ -63,8 +61,6 @@ export default async (req, res) => {
           }
         });
       })
-      .catch((err) => {
-      
-      });
+      .catch((err) => {});
   }
 };

@@ -27,9 +27,7 @@ export default function Stores({ stores }) {
           setMore(false);
         }
       }
-    } catch (err) {
-     
-    }
+    } catch (err) {}
   };
 
   const loadProducts = async () => {
@@ -47,14 +45,12 @@ export default function Stores({ stores }) {
         setMore(false);
       }
       setPage(page + 1);
-    } catch (err) {
-    
-    }
+    } catch (err) {}
   };
   return (
     <section>
       <img
-        style={{width:"100%"}}
+        style={{ width: "100%" }}
         src="https://super-dashboard-images-cdn.s3.amazonaws.com/images/1648815293599-all-stores.jpeg"
         alt="top stores"
       ></img>
@@ -63,7 +59,7 @@ export default function Stores({ stores }) {
           <div className="sub-head d-flex justify-content-center align-items-center my-4">
             <h1>
               <strong>Find Best Stores on </strong>
-              <span className="fw-light">Deal2Coupon</span>
+              <span className="fw-light">The Saver Street</span>
             </h1>
           </div>
 
@@ -105,38 +101,41 @@ export default function Stores({ stores }) {
             <div className="container text-start">
               <h3>ALL STORES</h3>
               <p>
-                Think of a store and shop there from here. Deal2Coupon hunts for the
-                best coupons for more than 44,000+ stores and applies on your
-                cart for all the bargain hunters. We have every possible
-                category in store for you. Look out for the heartiest deals and
-                savings of your life and get drenched in the discount rain.
+                Think of a store and shop there from here. The Saver Street
+                hunts for the best coupons for more than 44,000+ stores and
+                applies on your cart for all the bargain hunters. We have every
+                possible category in store for you. Look out for the heartiest
+                deals and savings of your life and get drenched in the discount
+                rain.
               </p>
               <h3>SHOP AND EARN WITH THESE STORES</h3>
               <p>
-                Every time you shop with us, you earn Deal2Coupon coins worth real
-                money. You can choose how you want to redeem your coins. You can
-                withdraw your money or use those coins for discounts on more
-                shopping.
+                Every time you shop with us, you earn The Saver Street coins
+                worth real money. You can choose how you want to redeem your
+                coins. You can withdraw your money or use those coins for
+                discounts on more shopping.
               </p>
               <p>
-                Note: The range of Deal2Coupon coins differs with every store shown
-                below and applies to specific items. Terms and Exceptions apply.
+                Note: The range of The Saver Street coins differs with every
+                store shown below and applies to specific items. Terms and
+                Exceptions apply.
               </p>
 
               <p>
-                Exceptions - The number of Deal2Coupon coins will vary for each
-                store you shop from, which will be set by the merchants. It also
-                depends upon what and how much you shop. Furthermore, there
+                Exceptions - The number of The Saver Street coins will vary for
+                each store you shop from, which will be set by the merchants. It
+                also depends upon what and how much you shop. Furthermore, there
                 could be certain products and categories that are not eligible
-                for earning Deal2Coupon coins. However, these exceptions and
-                exclusions vary and are decided by the stores. Please remember,
-                Deal2Coupon can’t decide whether the products you have purchased are
-                eligible for earning Deal2Coupon coins or not until after you have
-                made the purchase. Therefore, if you have bought ineligible
-                items for Deal2Coupon coins, you will not earn any Deal2Coupon coins
-                through your purchases. Hence, the final number of coins earned
-                will be rewarded directly to your Deal2Coupon wallet, and you will
-                be able to see it on your dashboard.
+                for earning The Saver Street coins. However, these exceptions
+                and exclusions vary and are decided by the stores. Please
+                remember, The Saver Street can’t decide whether the products you
+                have purchased are eligible for earning The Saver Street coins
+                or not until after you have made the purchase. Therefore, if you
+                have bought ineligible items for The Saver Street coins, you
+                will not earn any The Saver Street coins through your purchases.
+                Hence, the final number of coins earned will be rewarded
+                directly to your The Saver Street wallet, and you will be able
+                to see it on your dashboard.
               </p>
             </div>
           </p>

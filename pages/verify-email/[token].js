@@ -51,7 +51,9 @@ export default function index({ token, err }) {
             <div className="border p-5 d-inline-block">
               <h3 className="my-3">Thank You!</h3>
               <div>
-                <p>you have been successfully registered in Deal2Coupon.</p>
+                <p>
+                  you have been successfully registered in The Saver Street.
+                </p>
               </div>
               <a href="/">
                 <button type="button" className="btn btn-primary">

@@ -34,7 +34,7 @@ const createSitemap = (data) => `<?xml version="1.0" encoding="UTF-8"?>
             <loc>https://www.thesaverstreet.com/terms-of-use</loc>
         </url>
         <url>
-            <loc>https://www.thesaverstreet.com/Deal2Coupon-coins</loc>
+            <loc>https://www.thesaverstreet.com/The Saver Street-coins</loc>
         </url>
         <url>
             <loc>https://www.thesaverstreet.com/about</loc>

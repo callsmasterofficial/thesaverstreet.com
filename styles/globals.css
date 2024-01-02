@@ -479,13 +479,13 @@ hr {
   font-size: 22px;
 }
 
-.Deal2Coupon-title {
+.The Saver Street-title {
   font-size: 45px;
   font-weight: 600;
   color: #000000;
 }
 
-.Deal2Coupon-sub {
+.The Saver Street-sub {
   font-size: 18px;
 }
 
@@ -503,7 +503,7 @@ hr {
   border-radius: 2px;
 }
 
-.Deal2CouponCoinsBtn:hover {
+.The Saver StreetCoinsBtn:hover {
   background-color: #1596d6 !important;
 }
 
@@ -653,6 +653,9 @@ a img {
   font-weight: 400;
   border-radius: 0.35rem;
 }
+.footerThe Saver StreetImg{
+  width: 200px !important;
+}
 
 .user-panel-sidebar-link a svg {
   background: rgba(43, 123, 229, 0.13);
@@ -785,7 +788,7 @@ a img {
     align-items: center;
   }
 /* 
-  .footerDeal2CouponImg {
+  .footerThe Saver StreetImg {
     margin-bottom: 1.5rem;
   } */
 
@@ -897,7 +900,7 @@ a img {
     margin-left: 1rem;
   }
 
-  .Deal2Coupon-menu-icon {
+  .The Saver Street-menu-icon {
     margin-left: 60px;
   }
 
@@ -1019,7 +1022,7 @@ a img {
     align-items: center;
   }
 
-  .footerDeal2CouponImg {
+  .footerThe Saver StreetImg {
     margin-bottom: 1.5rem;
   }
 
@@ -1411,7 +1414,7 @@ a img {
   color: #000000;
 }
 
-.Deal2Couponcoin-p p {
+.The Saver Streetcoin-p p {
   line-height: 1.6;
 }
 
@@ -1441,11 +1444,11 @@ figure img {
   width: 100px;
 }
 
-#Deal2Coupon-laptop {
+#The Saver Street-laptop {
   width: 65%;
 }
 
-.Deal2Coupon-menu-icon {
+.The Saver Street-menu-icon {
   background: #2691bb;
   padding: 5px 7px;
   font-size: 12px;
@@ -1454,7 +1457,7 @@ figure img {
   color: #fff;
 }
 
-.Deal2Coupon-menu-icon img {
+.The Saver Street-menu-icon img {
   width: 20px;
 }
 
@@ -1820,7 +1823,7 @@ figure img {
 
 }
 
-.footerDeal2CouponImg{
+.footerThe Saver StreetImg{
   width: auto;
   height: 42px;
   object-fit: contain;
@@ -1828,7 +1831,7 @@ figure img {
 
 }
 
-.footerDeal2CouponImg:hover{
+.footerThe Saver StreetImg:hover{
   transform: rotate(4deg);
 
 }

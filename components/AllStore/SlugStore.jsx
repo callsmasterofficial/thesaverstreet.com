@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 export default function SlugStore({ coupons, store }) {
   return (
@@ -7,7 +8,7 @@ export default function SlugStore({ coupons, store }) {
           <div className="row">
             <div
               className="col-lg-3 col-md-6 col-12 border py-3 h-100"
-              style={{background: "white" }}
+              style={{ background: "white" }}
             >
               <img
                 src={
@@ -19,16 +20,20 @@ export default function SlugStore({ coupons, store }) {
                 alt="..."
               />
               <p className="my-3 text-center" style={{ fontSize: "10px" }}>
-                When you buy through links on Deal2Coupon we may earn a
-                commission.{" "}
+                Some links on this site may be affiliate links, meaning we could
+                earn a affiliate commission at no extra cost to you.{" "}
+                <Link href="/affiliate-disclosure"> Read More…</Link>
               </p>
               <hr></hr>
               {store && store.metadata.special_conditions && (
                 <>
                   <h5 className="text-center">Special Condition</h5>
-                  <div style={{ fontSize: "14px" }} dangerouslySetInnerHTML={{__html:store.metadata.special_conditions}} />
-                    
-                  
+                  <div
+                    style={{ fontSize: "14px" }}
+                    dangerouslySetInnerHTML={{
+                      __html: store.metadata.special_conditions,
+                    }}
+                  />
                 </>
               )}
 
@@ -47,7 +52,9 @@ export default function SlugStore({ coupons, store }) {
                     </td>
                   </tr>
                   <tr>
-                    <td style={{ fontSize: "14px" }}>Deal2Coupon Rewards</td>
+                    <td style={{ fontSize: "14px" }}>
+                      The Saver Street Rewards
+                    </td>
                     <td
                       style={{
                         textAlign: "right",
@@ -215,10 +222,7 @@ export default function SlugStore({ coupons, store }) {
                               <div className="modal-body text-center">
                                 <div>
                                   <img
-                                    src={
-                                      coupon.image || store.metadata?.logo
-                                        
-                                    }
+                                    src={coupon.image || store.metadata?.logo}
                                     alt={store.name}
                                     style={{
                                       height: "80px",

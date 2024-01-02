@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   const schema = {
     "@context": "https://schema.org/",
     "@type": "WebSite",
-    name: "joinDeal2Coupon",
+    name: "thesaverstreet",
     url: "https://www.thesaverstreet.com/",
     potentialAction: {
       "@type": "SearchAction",
@@ -40,7 +40,7 @@ function MyApp({ Component, pageProps }) {
         <title>
           {pageProps.meta
             ? pageProps.meta.title
-            : "Apply Online Coupons, Promo Code, Deals and Exclusive Offers | Deal2Coupon"}
+            : "Apply Online Coupons, Promo Code, Deals and Exclusive Offers | The Saver Street"}
         </title>
         {pageProps.meta && (
           <meta property="og:image" content={pageProps?.meta?.featuredImage} />
@@ -55,7 +55,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="article" />
-        <meta property="og:sitename" content="joinDeal2Coupon" />
+        <meta property="og:sitename" content="thesaverstreet" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
           rel="stylesheet"

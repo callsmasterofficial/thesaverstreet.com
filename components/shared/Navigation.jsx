@@ -185,10 +185,10 @@ export default function Navigation() {
             </ul>
 
             {/* {user ? (
-              <div className="Deal2Coupon-menu-icon">
+              <div className="The Saver Street-menu-icon">
                 <img
                   className="me-1"
-                  src="images/Deal2Coupon-menu-icon.png"
+                  src="images/The Saver Street-menu-icon.png"
                   alt=""
                 />{" "}
                 0 Coins

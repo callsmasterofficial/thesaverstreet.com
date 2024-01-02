@@ -32,14 +32,15 @@ export async function getStaticProps() {
     props: {
       stores: stores.slice(0, 10),
       posts: skimLinkPromise,
-      trendingDeals: JSON.parse(JSON.stringify(component.contents)),
+      // trendingDeals: JSON.parse(JSON.stringify(component.contents)),
+      trendingDeals: [],
       meta: {
         title:
-          "Apply Online Coupons, Promo Code, Deals and Exclusive Offers | Deal2Coupon",
+          "Apply Online Coupons, Promo Code, Deals and Exclusive Offers | The Saver Street",
         description:
-          "Save more with best Coupons, Promo Code, Deals and Offers available at Deal2Coupon ✔  Thousands of online stores ✔ Apply coupon at single click ✔ Get Extension",
+          "Save more with best Coupons, Promo Code, Deals and Offers available at The Saver Street ✔  Thousands of online stores ✔ Apply coupon at single click ✔ Get Extension",
         keywords:
-          "coupon codes, code, discounts, best deal online, coupons, promotional, promo, promotion, deal, promo code, offers, discount code, best deal offers, Deal2Coupon extension, Deal2Coupon coupon, how to use Deal2Coupon extension, Deal2Coupon login",
+          "coupon codes, code, discounts, best deal online, coupons, promotional, promo, promotion, deal, promo code, offers, discount code, best deal offers, The Saver Street extension, The Saver Street coupon, how to use The Saver Street extension, The Saver Street login",
         pageUrl: "https://www.thesaverstreet.com/",
         featuredImage: process.env.FAV_ICON,
       },
@@ -82,7 +83,7 @@ export default function Home({ stores, posts, trendingDeals }) {
       {/* <Banner /> */}
       <PopularDeals posts={posts.slice(8, 16)} />
       <PopularCoupons posts={coupons} />
-      <HomeContent />
+      {/* <HomeContent /> */}
       <Footer />
     </>
   );

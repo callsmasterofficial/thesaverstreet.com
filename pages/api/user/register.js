@@ -67,7 +67,7 @@ export default async function (req, res) {
               const mailOptions = {
                 from: "anoj.callsmaster@gmail.com",
                 to: user.email,
-                subject: "Deal2Coupon! Account Verification Email",
+                subject: "The Saver Street! Account Verification Email",
                 html: `<!DOCTYPE html>
                       <html>
                       <head>
@@ -151,4 +151,4 @@ export default async function (req, res) {
   } else {
     return res.status(404).json({ message: "Only POST request is allowed." });
   }
-};
+}

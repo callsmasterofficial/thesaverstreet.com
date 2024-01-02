@@ -16,35 +16,34 @@ function Footer() {
                 <img
                   src="./images/logo3.svg"
                   style={{ cursor: "pointer" }}
-                  className="footerDeal2CouponImg"
+                  className="footerThe Saver StreetImg"
                   alt="Deal to Coupon"
-                  style={{ width: "200px" }}
                 />
               </Link>
               <div className="social-media mt-3" style={{ cursor: "pointer" }}>
                 <Link
-                  href="https://www.facebook.com/joinDeal2Coupon"
+                  href="https://www.facebook.com/joinThe Saver Street"
                   target="_blank"
                   className="footer_logo"
                 >
                   <Facebook height="2rem" width="2rem" color="#000" />
                 </Link>
                 <Link
-                  href="https://www.instagram.com/joinDeal2Coupon/"
+                  href="https://www.instagram.com/joinThe Saver Street/"
                   target="_blank"
                   className="footer_logo"
                 >
                   <Instagram height="2rem" width="2rem" color="#000" />
                 </Link>
                 <Link
-                  href="https://in.pinterest.com/joinDeal2Coupon2911/_saved/"
+                  href="https://in.pinterest.com/joinThe Saver Street2911/_saved/"
                   target="_blank"
                   className="footer_logo"
                 >
                   <Pintrest height="2rem" width="2rem" color="#000" />
                 </Link>
                 <Link
-                  href="https://twitter.com/Deal2CouponJoin"
+                  href="https://twitter.com/The Saver StreetJoin"
                   className="footer_logo"
                   target="_blank"
                 >
@@ -107,11 +106,11 @@ function Footer() {
           </div>
           <div className="col-lg-2 companyf">
             <h6 className="bottomHeading">COMPANY</h6>
-            <Link href="/Deal2Coupon-coins" passHref>
+            {/* <Link href="/The Saver Street-coins" passHref>
               <div>
-                <CgChevronDoubleRight /> Deal2Coupon Coins
+                <CgChevronDoubleRight /> The Saver Street Coins
               </div>
-            </Link>
+            </Link> */}
             <Link href="/about" passHref>
               <div>
                 <CgChevronDoubleRight /> About
@@ -122,14 +121,14 @@ function Footer() {
                 <CgChevronDoubleRight /> Blog
               </div>
             </Link>
-            <Link href="/extension" passHref>
+            <Link href="/affiliate-disclosure" passHref>
               <div>
-                <CgChevronDoubleRight /> Extension
+                <CgChevronDoubleRight /> Affiliate Disclosure
               </div>
             </Link>
-            <Link href="/frequently-asked-questions" passHref>
+            <Link href="/disclaimer" passHref>
               <div>
-                <CgChevronDoubleRight /> FAQ&apos;s
+                <CgChevronDoubleRight /> Disclaimer
               </div>
             </Link>
           </div>
@@ -161,12 +160,16 @@ function Footer() {
           style={{ fontSize: "13px", lineHeight: "2" }}
           className="footerContP"
         >
-          Deal2Coupon is registered trademark of Callsmaster Services LLP.
-          Third-party trademarks are the property of their respective
-          third-party owners. Presence of a third-party trademark does
-          <br></br> not mean that Deal2Coupon has any relationship with that
-          third-party or that the third-party endorses Deal2Coupon or its
-          services.
+          <span className="font-weight-bold">About The Saver Street:</span>{" "}
+          Brought to you by Sparkling Innovation LLC,{" "}
+          <span className="font-weight-bold">The Saver Street</span> is your
+          ultimate destination for discovering the best deals and coupons
+          online. We&apos;re dedicated to helping savvy shoppers like you find
+          amazing savings on everything from everyday items to special
+          purchases. Our team works tirelessly to curate the most exciting
+          offers, ensuring that you never miss out on a great deal. Join our
+          community of smart savers and turn your shopping experience into a
+          journey of incredible value and fun! 🛍️💰
         </p>
       </div>
 
@@ -175,7 +178,7 @@ function Footer() {
         style={{ background: "black" }}
       >
         <small className="text-white">
-          © Copyright 2022, All Rights Reserved Callsmaster Services LLP
+          © Copyright 2024, All Rights Reserved Sparkling Innovation LLC
         </small>
       </div>
     </div>

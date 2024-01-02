@@ -9,7 +9,7 @@ export async function getStaticProps() {
       deals: skimLinksCoupons,
       meta: {
         title:
-          "Deal of the Day - Today's Best Daily Deals & Offers | Deal2Coupon",
+          "Deal of the Day - Today's Best Daily Deals & Offers | The Saver Street",
         description:
           "Deal of the Day - Today's best daily deals & offers with ultimate savings. Find huge discounts, up to 80% off on most popular deals here.",
         keywords:

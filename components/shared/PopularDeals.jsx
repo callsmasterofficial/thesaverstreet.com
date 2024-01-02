@@ -5,7 +5,7 @@ export default function Coupon({ posts }) {
   return (
     <>
       <div className="container">
-        <h3 className="home-h3" >Earn Rewards with these offers</h3>
+        <h3 className="home-h3">Earn Rewards with these offers</h3>
         <div className="line-divider">
           <span className="line-mask blue-bg"></span>
         </div>
@@ -152,7 +152,7 @@ export default function Coupon({ posts }) {
           ))}
         </div>
 
-        {posts.map((post) => (
+        {/* {posts.map((post) => (
           <div
             className="col-sm-12 col-md-6 col-lg-3 mb-3"
             key={post._id}
@@ -162,7 +162,7 @@ export default function Coupon({ posts }) {
           >
             <div className="mobile-coupon-card">
               <div className="mobile-coupon-logo" style={{ padding: "10px" }}>
-                {/* <img src="https://super-dashboard-images-cdn.s3.amazonaws.com/images/1650542955747-mobile-test-logo.png" alt="" width={100} /> */}
+                <img src="https://super-dashboard-images-cdn.s3.amazonaws.com/images/1650542955747-mobile-test-logo.png" alt="" width={100} />
                 <img
                   className="card-img-top"
                   src={
@@ -172,21 +172,29 @@ export default function Coupon({ posts }) {
                   alt={post.store.name}
                   style={{ height: "100px", width: "100px" }}
                   data-bs-toggle="modal"
-                    data-bs-target={`#iddeals_${post._id}`}
-
+                  data-bs-target={`#iddeals_${post._id}`}
                 />
               </div>
               <div className="mobile-coupon-text">
-                <h6 className="card-title card-store-name ">{post.store.name}</h6>
-                <h5 className="card-title coupon-card-title "> {post.title || "Best Deals"}</h5>
+                <h6 className="card-title card-store-name ">
+                  {post.store.name}
+                </h6>
+                <h5 className="card-title coupon-card-title ">
+                  {" "}
+                  {post.title || "Best Deals"}
+                </h5>
 
-                <button id="mobile-coupon-button" data-bs-toggle="modal"
-                    data-bs-target={`#iddeals_${post._id}`}>Get Offer</button>
-                
+                <button
+                  id="mobile-coupon-button"
+                  data-bs-toggle="modal"
+                  data-bs-target={`#iddeals_${post._id}`}
+                >
+                  Get Offer
+                </button>
               </div>
             </div>
           </div>
-        ))}
+        ))} */}
       </div>
     </>
   );

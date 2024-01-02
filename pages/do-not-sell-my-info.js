@@ -5,11 +5,11 @@ export async function getStaticProps() {
     props: {
       meta: {
         title:
-          "Do Not Sell My Info - Deal2Coupon | Online Coupons, Promo Code & Deals",
+          "Do Not Sell My Info - The Saver Street | Online Coupons, Promo Code & Deals",
         description:
-          "Do Not Sell My Info - Get information regarding how Deal2Coupon Collects, Uses, and Discloses your Personal Information.",
+          "Do Not Sell My Info - Get information regarding how The Saver Street Collects, Uses, and Discloses your Personal Information.",
         keywords:
-          "coupon codes, code, discounts, coupons,promotional, promo, promotion, deal,promo code, offers, discount code, best deal offers, Deal2Coupon extension, Deal2Coupon coupon, how to use Deal2Coupon extension, Deal2Coupon login",
+          "coupon codes, code, discounts, coupons,promotional, promo, promotion, deal,promo code, offers, discount code, best deal offers, The Saver Street extension, The Saver Street coupon, how to use The Saver Street extension, The Saver Street login",
         pageUrl: "https://www.thesaverstreet.com/do-not-sell-my-info",
         featuredImage: process.env.FAV_ICON,
       },
@@ -35,7 +35,7 @@ export default function DoNotSellMyInfo() {
         <div className="container copyright-p">
           <p className="para mt-4 ms-1">
             To submit your request not to have your data sold, fill this form.
-            You can see our Privacy Policy to learn how Deal2Coupon collects,
+            You can see our Privacy Policy to learn how TheSaverStreet collects,
             uses, and discloses information.
           </p>
           <form className="bg-white mt-1 mb-4 p-4 shadow rounded para">

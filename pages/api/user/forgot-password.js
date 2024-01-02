@@ -17,25 +17,28 @@ export default async (req, res) => {
         const token = await sign({ email: email }, process.env.TOKEN_KEY, {
           expiresIn: 1800,
         });
-        const result = await User.findOneAndUpdate({ email: body.email }, {token: token});
+        const result = await User.findOneAndUpdate(
+          { email: body.email },
+          { token: token }
+        );
         if (result) {
-              const transporter = nodemailer.createTransport({
-                // service: 'gmail',
-                host: "smtp.gmail.com",
-                port: 587,
-                secure: false,
-                requireTLS: true,
-                auth: {
-                  user: "anoj.callsmaster@gmail.com",
-                  pass: "new$@3434",
-                },
-              });
+          const transporter = nodemailer.createTransport({
+            // service: 'gmail',
+            host: "smtp.gmail.com",
+            port: 587,
+            secure: false,
+            requireTLS: true,
+            auth: {
+              user: "anoj.callsmaster@gmail.com",
+              pass: "new$@3434",
+            },
+          });
 
-              const mailOptions = {
-                from: "anoj.callsmaster@gmail.com",
-                to: email,
-                subject: "Deal2Coupon! mail for reset password",
-                html: `<!DOCTYPE html>
+          const mailOptions = {
+            from: "anoj.callsmaster@gmail.com",
+            to: email,
+            subject: "The Saver Street! mail for reset password",
+            html: `<!DOCTYPE html>
                           <html>
                           <head>
                           <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -88,24 +91,24 @@ export default async (req, res) => {
                         </body>
                         </html>
                           `,
-              };
+          };
 
-              transporter.sendMail(mailOptions, (err, info) => {
-                if (err) {
-                  return res.status(304).json({
-                    message: "Error Occured",
-                  });
-                } else {
-                  return res.status(200).json({
-                    message: `Please check your mail and verify.`,
-                    success: 1,
-                  });
-                }
+          transporter.sendMail(mailOptions, (err, info) => {
+            if (err) {
+              return res.status(304).json({
+                message: "Error Occured",
               });
-            }else{
-              return res.status(404).json({message: "User don't exist."})
+            } else {
+              return res.status(200).json({
+                message: `Please check your mail and verify.`,
+                success: 1,
+              });
             }
+          });
+        } else {
+          return res.status(404).json({ message: "User don't exist." });
         }
+      }
     } catch (err) {
       return res.status(500).json({ message: "internal server error", err });
     }

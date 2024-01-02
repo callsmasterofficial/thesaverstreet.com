@@ -5,11 +5,12 @@ export async function getStaticProps() {
   return {
     props: {
       meta: {
-        title: "About us - Deal2Coupon | Online Coupons, Promo Code & Deals",
+        title:
+          "About us - The Saver Street | Online Coupons, Promo Code & Deals",
         description:
-          "Deal2Coupon offer a pleasurable online shopping experience with millions of discount coupons and promo codes for over 45000 online stores",
+          "The Saver Street offer a pleasurable online shopping experience with millions of discount coupons and promo codes for over 45000 online stores",
         keywords:
-          "coupon codes, code, discounts, coupons,promotional, promo, promotion, deal,promo code, offers, discount code, best deal offers, Deal2Coupon extension, Deal2Coupon coupon, how to use Deal2Coupon extension, Deal2Coupon login",
+          "coupon codes, code, discounts, coupons,promotional, promo, promotion, deal,promo code, offers, discount code, best deal offers, The Saver Street extension, The Saver Street coupon, how to use The Saver Street extension, The Saver Street login",
         pageUrl: "https://www.thesaverstreet.com/about",
         featuredImage: process.env.FAV_ICON,
       },
@@ -23,31 +24,45 @@ const about = () => {
       <img
         style={{ width: "100%" }}
         src="https://super-dashboard-images-cdn.s3.amazonaws.com/images/1648814111293-about-us.jpeg"
-        alt="about Deal2Coupon"
+        alt="about The Saver Street"
       ></img>
 
       <div className="container-fluid bg-white  py-5">
         <div className="container py-5" style={{ lineHeight: "2" }}>
-          <small>
-            Deal2Coupon saves you time and effort by allowing you to look for
-            coupons and discounts without having to trawl through the internet.
-            While you're shopping online, this free tool automatically looks for
-            and uses the most excellent money-saving promo coupons. Deal2Coupon
-            is a valuable and user-friendly extension for people who enjoy
-            shopping online. Thus, saving money when purchasing is as simple as
-            clicking a button.
-          </small>
-          <small>
-            Shopping becomes an extravagant spending spree for impulse buyers.
-            However, with Deal2Coupon, you don't need to worry about spending
-            too much. Since our automatic search applies money-saving coupons on
-            its own, you can shop your heart out. Moreover, while shopping, we
-            often get stuck because of price or payment issues. Thus, that's
-            where the Deal2Coupon comes into the picture to save the day. Our
-            tool has been designed in a way that is bound to help you in all
-            ways possible. Therefore, start shopping and save money with
-            Deal2Coupon.
-          </small>
+          <h4>About Us at The Saver Street</h4>
+          <h6 className="my-3">
+            Welcome to The Saver Street – your trusted companion in the
+            exhilarating world of savings and discounts!
+          </h6>
+          <h6 className="my-3">
+            We are a dedicated team brought together by Sparkling Innovation
+            LLC, united by our passion for finding the best deals and sharing
+            them with you. Our journey began with a simple vision: to create a
+            platform where saving money is not just a necessity but a delightful
+            experience.
+          </h6>
+          <h6 className="my-3">
+            At The Saver Street, we scour the internet to bring you the top
+            deals, discounts, and coupons. We believe that everyone deserves the
+            joy of finding a great bargain, and we&#39;re here to make that
+            happen. Our deals are carefully selected to ensure they meet our
+            high standards of value and quality.
+          </h6>
+          <h6 className="my-3">
+            We’re more than just a deals site; we&#39;re a community. We
+            encourage our users to share their finds, tips, and experiences.
+            Together, we celebrate the wins and navigate the challenges of smart
+            shopping.
+          </h6>
+          <h6 className="my-3">
+            Our commitment goes beyond just providing deals. We strive to offer
+            insights, tips, and advice on smart shopping, helping you make
+            informed decisions. Thank you for choosing The Saver Street.
+            We&#39;re excited to embark on this savings journey with you!
+          </h6>
+          <h6 className="my-3">
+            Happy saving! <br /> The Team at The Saver Street
+          </h6>
         </div>
       </div>
       <div className=" container">
@@ -65,9 +80,9 @@ const about = () => {
                     Automatic Search
                   </h5>
                   <p>
-                    Deal2Coupon is independent once installed. Simply shop as
-                    usual on websites, and this tool will automatically find the
-                    best codes, compare them, and apply the best code at
+                    The Saver Street is independent once installed. Simply shop
+                    as usual on websites, and this tool will automatically find
+                    the best codes, compare them, and apply the best code at
                     checkout.
                   </p>
                 </div>
@@ -79,12 +94,12 @@ const about = () => {
                     alt="Automatic Search"
                   />
                   <h5 className="fw-bold text-center" style={{ color: "#000" }}>
-                    Deal2Coupon Coins
+                    The Saver Street Coins
                   </h5>
                   <p>
-                    Deal2Coupon Coins can be earned by shopping with
-                    Deal2Coupon. Therefore, the more you shop, the more money
-                    you make. Deal2Coupon coins can be redeemed for further
+                    The Saver Street Coins can be earned by shopping with The
+                    Saver Street. Therefore, the more you shop, the more money
+                    you make. The Saver Street coins can be redeemed for further
                     savings at some stores.
                   </p>
                 </div>
@@ -99,10 +114,10 @@ const about = () => {
                     45,000+ Shopping Websites
                   </h5>
                   <p>
-                    Deal2Coupon searches for coupons and applies them to over
-                    45,000 different purchasing websites. Shopping online has
-                    just become a whole lot easier and less expensive, thanks to
-                    Deal2Coupon.
+                    The Saver Street searches for coupons and applies them to
+                    over 45,000 different purchasing websites. Shopping online
+                    has just become a whole lot easier and less expensive,
+                    thanks to The Saver Street.
                   </p>
                 </div>
               </div>
@@ -119,7 +134,7 @@ const about = () => {
                   Free and Easy-to-use
                 </h5>
                 <p>
-                  Deal2Coupon is entirely free, allowing you to save a
+                  The Saver Street is entirely free, allowing you to save a
                   significant amount of money at no cost at all. Furthermore,
                   because you don't have to change anything, the extension is
                   quite simple to use.
@@ -136,9 +151,9 @@ const about = () => {
                   Shop Anything
                 </h5>
                 <p>
-                  Deal2Coupon caters to all of your purchasing needs, from food
-                  to flights, furnishings to footwear. You may be shopping for
-                  anything, and Deal2Coupon will get you a deal on it.
+                  The Saver Street caters to all of your purchasing needs, from
+                  food to flights, furnishings to footwear. You may be shopping
+                  for anything, and The Saver Street will get you a deal on it.
                 </p>
               </div>
             </div>
@@ -158,7 +173,7 @@ const about = () => {
           <br></br>
           <small>
             Our goal is to help you shop better and save money. This eliminates
-            the need to scour the internet for discounts. Deal2Coupon will
+            the need to scour the internet for discounts. The Saver Street will
             function independently after being installed and supply you with the
             most fantastic promo codes and savings. Therefore, here's a place
             which gives you more for less even if there's nothing more for us.
@@ -229,9 +244,9 @@ const about = () => {
                 </h5>
                 <small>
                   We recruit exceptional individuals who feel responsible for
-                  pushing Deal2Coupon ahead. We all work with the best interests
-                  of the firm and our members at heart. We keep ourselves and
-                  our teams liable for any and all outcomes.
+                  pushing The Saver Street ahead. We all work with the best
+                  interests of the firm and our members at heart. We keep
+                  ourselves and our teams liable for any and all outcomes.
                 </small>
               </div>
             </div>

@@ -27,13 +27,58 @@ export default function Slider({ stores, trendingDeals }) {
               swipeable={true}
               emulateTouch={true}
             >
-              {trendingDealsArr.map((item) => (
+              {/* {trendingDealsArr.map((item) => (
                 <div onClick={() => window.open(item.link)}>
                   <img src={item.bg_image} loading="lazy" alt="" />
                 </div>
-              ))}
+              ))} */}
+              <div
+                onClick={() =>
+                  window.open(
+                    `https://super-dashboard-images-cdn.s3.amazonaws.com/images/1654692138332-walmart-banner.jpeg`
+                  )
+                }
+              >
+                <img
+                  src={
+                    "https://super-dashboard-images-cdn.s3.amazonaws.com/images/1654692138332-walmart-banner.jpeg"
+                  }
+                  loading="lazy"
+                  alt="amazonaws"
+                />
+              </div>
+              <div
+                onClick={() =>
+                  window.open(
+                    `https://super-dashboard-images-cdn.s3.amazonaws.com/images/1654692138332-walmart-banner.jpeg`
+                  )
+                }
+              >
+                <img
+                  src={
+                    "https://super-dashboard-images-cdn.s3.amazonaws.com/images/1654692138332-walmart-banner.jpeg"
+                  }
+                  loading="lazy"
+                  alt="amazonaws"
+                />
+              </div>
+              <div
+                onClick={() =>
+                  window.open(
+                    `https://super-dashboard-images-cdn.s3.amazonaws.com/images/1654692138332-walmart-banner.jpeg`
+                  )
+                }
+              >
+                <img
+                  src={
+                    "https://super-dashboard-images-cdn.s3.amazonaws.com/images/1654692138332-walmart-banner.jpeg"
+                  }
+                  loading="lazy"
+                  alt="amazonaws"
+                />
+              </div>
             </Carousel>
-            {/* <img src="https://super-dashboard-images-cdn.s3.amazonaws.com/images/1650276511803-Deal2Couponbanner1.jpeg" /> */}
+            {/* <img src="https://super-dashboard-images-cdn.s3.amazonaws.com/images/1650276511803-The Saver Streetbanner1.jpeg" /> */}
           </div>
           <div className="col-lg-3 d-lg-block d-md-none d-none d-sm-none">
             <Card />
@@ -42,17 +87,9 @@ export default function Slider({ stores, trendingDeals }) {
           {/* </div> */}
 
           <div id="commission-msg" style={{ color: "black" }}>
-            When you buy through links on The Saver Street we may earn a
-            commission.{" "}
-            <span className="me-1">
-              <Link
-                style={{ color: "#fff" }}
-                href={"/terms-of-use"}
-                className="learnMore"
-              >
-                Learn more
-              </Link>
-            </span>
+            Some links on this site may be affiliate links, meaning we could
+            earn a affiliate commission at no extra cost to you.{" "}
+            <Link href="/affiliate-disclosure">Read More…</Link>
           </div>
         </div>
       </div>
