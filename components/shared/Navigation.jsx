@@ -224,11 +224,12 @@ export default function Navigation() {
             <div>
               <Link href="/" passHref>
                 <img
-                  src="./images/logo.png"
+                  src="./images/logo3.svg"
                   style={{
+                    width: "150px",
                     cursor: "pointer",
-                    marginRight: "15px",
-                    height: "38px",
+                    marginRight: "10px",
+                    height: "40px",
                   }}
                   alt="..."
                 />
@@ -247,7 +248,7 @@ export default function Navigation() {
                     padding: "10px 22px !important",
                     borderRadius: "20px",
                     fontSize: "12px",
-                    width: "120%",
+                    width: "80%",
                   }}
                   type="search"
                   placeholder="Search for stores or items"
@@ -296,7 +297,7 @@ export default function Navigation() {
                     />
                   </div>
                   <div className="modal-body">
-                    <div className="d-flex justify-content-evenly">
+                    {/* <div className="d-flex justify-content-evenly">
                       <p
                         className="px-5 py-2 border inline-block rounded-pill fw-bold"
                         data-bs-dismiss="modal"
@@ -315,7 +316,7 @@ export default function Navigation() {
                       >
                         login
                       </p>
-                    </div>
+                    </div> */}
                     <Link href="/all-stores" passHref>
                       <p style={mobilestylep} data-bs-dismiss="modal">
                         Stores

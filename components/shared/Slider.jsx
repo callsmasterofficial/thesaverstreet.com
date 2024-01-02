@@ -86,7 +86,7 @@ export default function Slider({ stores, trendingDeals }) {
 
           {/* </div> */}
 
-          <div id="commission-msg" style={{ color: "black" }}>
+          <div id="commission-msg" style={{ color: "black", marginTop: "5px" }}>
             Some links on this site may be affiliate links, meaning we could
             earn a affiliate commission at no extra cost to you.{" "}
             <Link href="/affiliate-disclosure">Read More…</Link>

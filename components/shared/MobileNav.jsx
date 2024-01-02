@@ -1,9 +1,10 @@
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 export default function MobileNav() {
   return (
     <div>
-        <div className="container-fluid Mobile-menu-item d-block d-lg-none">
+      <div className="container-fluid Mobile-menu-item d-block d-lg-none">
         <div
           className="row"
           style={{ paddingTop: " 10px", paddingBottom: "10px" }}
@@ -12,8 +13,9 @@ export default function MobileNav() {
             <div>
               <Link href="/" passHref>
                 <img
-                  src="./images/logo.png"
+                  src="/images/logo3.svg"
                   style={{
+                    width: "80px",
                     cursor: "pointer",
                     marginRight: "15px",
                     height: "38px",
@@ -84,31 +86,18 @@ export default function MobileNav() {
                     />
                   </div>
                   <div className="modal-body">
-                    <div className="d-flex justify-content-evenly">
-                      <p className="px-5 py-2 border inline-block rounded-pill fw-bold" 
-                       data-bs-dismiss="modal"  data-bs-toggle="modal"
-                       data-bs-target="#registerModalCenter" style={mobilestylep}
-                       onClick={()=>setActive("join")}
-                       >
-                        join
-                      </p>
-                      <p className="px-5 py-2 border inline-block rounded-pill fw-bold" data-bs-dismiss="modal"
-                       style={mobilestylep}
-                       data-bs-toggle="modal"
-                       data-bs-target="#loginModalCenter"
-                       onClick={()=>setActive("login")}
-                       >
-                        login
-                      </p>
-                    </div>
                     <Link href="/all-stores" passHref>
-                     <p  style={mobilestylep} 
-                      data-bs-dismiss="modal" >Stores</p>
-                     </Link>
-                     <Link href="/deal-of-the-day" data-bs-dismiss="modal"  passHref>
-                     <p  style={mobilestylep}>Deal of the day</p>
-                      </Link>
-                    
+                      <p style={mobilestylep} data-bs-dismiss="modal">
+                        Stores
+                      </p>
+                    </Link>
+                    <Link
+                      href="/deal-of-the-day"
+                      data-bs-dismiss="modal"
+                      passHref
+                    >
+                      <p style={mobilestylep}>Deal of the day</p>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -117,5 +106,5 @@ export default function MobileNav() {
         </div>
       </div>
     </div>
-  )
+  );
 }
